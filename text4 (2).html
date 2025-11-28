@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ô trạng thái--> 
+    <div class="square"> 
+        <img src="2.jpg" alt="eevee">
+    </div>
+        <div class="box1" style="font-size:10px; color:aliceblue;">
+            <p>Eevee</p>
+        </div>
+        <div class="box2" style="font-size:25px; color:aliceblue;">
+            <div class="buttons">
+                <button class="openBtn" onclick="showTasks()">💬</button>
+            </div>
+        </div>
+        <div class="affectionbar">
+            <div class="affectionfill"></div>
+        </div>
+    <!-- chủ thể-->
+    <div class="eeveegif">
+        <img src="eevee-unscreen.gif" alt="eevee">
+    </div>
+    <!-- tương tác hành động-->
+    <div class="container" style="display: flex; align-items: center;">
+        <div class="buttons">
+            <button style="border: 2px solid; padding:10px; background-color: #f8fe408c; font-family: 'VT323';" onclick="interact('pat')">pat</button>
+            <button style="border: 2px solid; padding:10px; background-color: #f8fe408c; font-family: 'VT323';" onclick="interact('cuddle')">cuddle</button>
+            <button style="border: 2px solid; padding:10px; background-color: #f8fe408c; font-family: 'VT323';" onclick="interact('hug')">hug</button>
+            <button style="border: 2px solid; padding:10px; background-color: #f8fe408c; font-family: 'VT323';" onclick="interact('feed')">feed</button>
+            <button style="border: 2px solid; padding:10px; background-color: #f8fe408c; font-family: 'VT323';" onclick="interact('poke')">poke</button>
+        </div>
+    </div> 
+    <!--list-->
+        <div class="taskList" id="taskList">
+            <span class="closeBtn" onclick="closeTasks()">X</span>
+            <h3>Daily Quest</h3>
+                <ul type="none">
+                <li>mission 1</li>
+                <li>mission 2</li>
+                <li>mission 3</li>
+                <li>mission 4</li>
+                <li>mission 5</li>
+                </ul>
+            <div class="tasklistbox">               
+                <div class="buttons-claim">
+                    <button style="border: 1px solid; padding:3px; background-color: #f8fe40; font-family: 'VT323';" onclick="interact('claim')">claim</button>
+                    <button style="border: 1px solid; padding:3px; background-color: #f8fe40; font-family: 'VT323';" onclick="interact('claim')">claim</button>
+                    <button style="border: 1px solid; padding:3px; background-color: #f8fe40; font-family: 'VT323';" onclick="interact('claim')">claim</button>
+                    <button style="border: 1px solid; padding:3px; background-color: #f8fe40; font-family: 'VT323';" onclick="interact('claim')">claim</button>
+                    <button style="border: 1px solid; padding:3px; background-color: #f8fe40; font-family: 'VT323';" onclick="interact('claim')">claim</button>
+                </div>             
+            </div>
+        </div>
+<script src="script.js"></script>
+</body>
+</html>
