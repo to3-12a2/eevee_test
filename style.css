@@ -1,0 +1,156 @@
+body { 
+    margin-top: 10%; 
+    padding: 0;
+    font-family: 'Press Start 2P';
+    text-align: center;
+    overflow: hidden;
+    background: /* Đặt gradient làm background chính */
+        url('flower.jpg') no-repeat center / contain fixed,
+        linear-gradient(to bottom, #ffeaa7, #fab1a0);
+    background-attachment: fixed;
+    background-size: contain;  /* chứa vừa ảnh, không crop */
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow:hidden;
+}
+.square {
+    width: 140px;
+    height: 140px;
+    margin-left: 233px ;
+    margin-right: 9999px;
+    object-fit: cover;
+    border: 2px solid #09d8f4;
+    border-radius: 20%;
+    position: fixed;
+    top: 10%;
+    left: ;
+    transform: translate(-50%, -50%);
+}
+.square img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+}
+.box1 {
+    width: 100px;
+    height:20px;
+    object-fit: cover;
+    border: 2px solid #09d8f4;
+    border-radius: 20%;
+    margin-top: -60px;
+    margin-left: 490px;
+    display: flex;
+    justify-content: center;  /* căn ngang */
+    align-items: center;      /* căn dọc */
+}
+.box2 {
+    width: 40px;
+    height:40px;
+    object-fit: cover;
+    border: 2px solid #040404;
+    background-color: rgb(145, 145, 138);
+    border-radius: 20%;
+    margin-top:40px;
+    margin-left:410px;
+    display: flex;
+    justify-content: center;  /* căn ngang */
+    align-items: center;      /* căn dọc */
+}
+.affectionbar {
+    width: 150px;          /* Chiều rộng thanh */
+    height: 20px;          /* Chiều cao thanh */
+    background-color: #ccc; /* Màu nền khung */
+    border: 2px solid #333; /* Viền khung */
+    border-radius: 10px;    /* Bo tròn góc */
+    overflow: hidden;       /* Đảm bảo fill không tràn ra ngoài */    
+    margin-left: 490px;
+    margin-top: -80px;
+}
+.affectionfill {
+    height: 100%;
+    background-color: #00b894;
+    width: 0%;
+    transition: width 0.5s;
+}
+.eeveegif {
+    width: 230px;
+    height: 200px;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.container {
+    width: 80px;
+    height: 230px;
+    border: 2px solid #09f453;
+    border-radius: 20px;
+    margin-top: -215px;
+    margin-left: 605px;
+    background-color: rgba(255, 255, 255, 0.534); /* Màu nền trắng với độ trong suốt */
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap:4px;
+}
+.buttons {  
+            display: flex;
+            border-radius: 10px;
+            flex-direction: column;
+            gap: 7px;
+        }
+.buttons button:hover { transform: scale(1.1); }
+.openBtn {
+        display: flex;
+        border-radius: 10px;
+}
+.taskList {
+    display: none; /* ẩn lúc đầu */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: rgba(255,255,255,0.95);
+    border: 2px solid #09f40d;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.closeBtn {
+    display: flex;
+    border-radius: 10px;
+}
+.taskList ul {
+    padding-left: 20px;
+    margin-top: -10px;
+    margin-left: -180px;
+    gap: 10px;
+}
+
+.taskList li {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.tasklistbox {
+    font-size: 16px;
+    position: fixed;
+    width: 100px;
+    height: 190px;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: -202px;
+    margin-left: 200px;
+    box-sizing: border-box;
+}
+.buttons-claim {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+.buttons-claim button:hover { transform: scale(1.1); color:#09f40d; }
